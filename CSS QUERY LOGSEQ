@@ -1,0 +1,380 @@
+/* TABLAS QUERIES AGRADECIMIENTOS A Felipe Ganash
+  link a la tabla original https://t.co/1fs9tfuZj5 */ Español
+
+ /** CSS de la comunidad que comprime la parte superior de opciones */
+  
+  .custom-query-title {
+  display: flex;
+  }
+  .custom-query .color-level, .custom-query .table-auto {
+  margin-top: 5px;
+  }
+  .custom-query .flex.flex-row.align-items.mt-2 {
+  justify-content: flex-end;
+  margin-top: -1.4em;
+  position: relative;
+  z-index: 1;
+  }
+  
+  /**** STATUS CSS ****/
+  
+  /****** To Watch **** ****/
+  
+  .page-reference[data-ref^='to watch'] .page-ref,
+  .page-ref[data-ref^='to watch'] {
+    background-color:   #E90000;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+  }
+  
+  .recent-item[data-ref^='to watch'] a,
+  .favorite-item[data-ref='To Watch'] a,
+  .title[data-ref^='to watch'] {
+  color:                  #transparent;
+  }
+  
+  .recent-item[data-ref^='to watch'],
+  .favorite-item[data-ref='To Watch'] {
+  position: relative;
+  }
+  .recent-item[data-ref^='to watch'] .page-icon,
+  .favorite-item[data-ref='To Watch'] .page-icon {
+  visibility: hidden;
+  }
+  
+  .page-reference[data-ref^='to watch'] .page-ref:before,
+  .page-ref[data-ref^='to watch']:before {
+  content:                '🟥 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+  }
+  
+  .recent-item[data-ref^='to watch']:before,
+  .favorite-item[data-ref='To Watch']:before {
+    content:                '🟥'!important;
+    margin-right:           2px;
+    font-size:              14px;
+  }
+  
+  .title[data-ref^='to watch']:before {
+    content:                '🟥 '!important;
+    margin-right:           2px;
+  }
+  
+  .recent-item[data-ref^='to watch']:before,
+  .favorite-item[data-ref='To Watch']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  }
+  
+  /****** Watching **** ****/
+  
+  .page-reference[data-ref='watching'] .page-ref,
+  .page-ref[data-ref='watching'] {
+    background-color:   #FF8B00;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+  }
+  
+  .recent-item[data-ref='watching'] a,
+  .favorite-item[data-ref='Watching'] a,
+  .title[data-ref='watching'] {
+  color:                  #transparent;
+  }
+  
+  .recent-item[data-ref='watching'],
+  .favorite-item[data-ref='Watching'] {
+  position: relative;
+  }
+  .recent-item[data-ref='watching'] .page-icon,
+  .favorite-item[data-ref='Watching'] .page-icon {
+  visibility: hidden;
+  }
+  
+  .page-reference[data-ref='watching'] .page-ref:before,
+  .page-ref[data-ref='watching']:before {
+  content:                '🟧 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+  }
+  
+  .recent-item[data-ref='watching']:before,
+  .favorite-item[data-ref='Watching']:before {
+    content:                '🟧'!important;
+    margin-right:           2px;
+    font-size:              14px;
+  }
+  
+  .title[data-ref='watching']:before {
+    content:                '🟧 '!important;
+    margin-right:           2px;
+  }
+  
+  .recent-item[data-ref='watching']:before,
+  .favorite-item[data-ref='Watching']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  }
+  
+  /****** Watched **** ****/
+  
+  .page-reference[data-ref='watched'] .page-ref,
+  .page-ref[data-ref='watched'] {
+    background-color:   #00BF00;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+  }
+  
+  .recent-item[data-ref='watched'] a,
+  .favorite-item[data-ref='Watched'] a,
+  .title[data-ref='watched'] {
+  color:                  #transparent;
+  }
+  
+  .recent-item[data-ref='watched'],
+  .favorite-item[data-ref='Watched'] {
+  position: relative;
+  }
+  .recent-item[data-ref='watched'] .page-icon,
+  .favorite-item[data-ref='Watched'] .page-icon {
+  visibility: hidden;
+  }
+  
+  .page-reference[data-ref='watched'] .page-ref:before,
+  .page-ref[data-ref='watched']:before {
+  content:                '🟩 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+  }
+  
+  .recent-item[data-ref='watched']:before,
+  .favorite-item[data-ref='Watched']:before {
+    content:                '🟩'!important;
+    margin-right:           2px;
+    font-size:              14px;
+  }
+  
+  .title[data-ref='watched']:before {
+    content:                '🟩 '!important;
+    margin-right:           2px;
+  }
+  
+  .recent-item[data-ref='watched']:before,
+  .favorite-item[data-ref='Watched']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  }
+  /****** Studying **** ****/
+  
+  .page-reference[data-ref='studying'] .page-ref,
+  .page-ref[data-ref='studying'] {
+    background-color:   #0066FC;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+  }
+  
+  .recent-item[data-ref='studying'] a,
+  .favorite-item[data-ref='Studying'] a,
+  .title[data-ref='studying'] {
+  color:                  #transparent;
+  }
+  
+  .recent-item[data-ref='studying'],
+  .favorite-item[data-ref='Studying'] {
+  position: relative;
+  }
+  .recent-item[data-ref='studying'] .page-icon,
+  .favorite-item[data-ref='Studying'] .page-icon {
+  visibility: hidden;
+  }
+  
+  .page-reference[data-ref='studying'] .page-ref:before,
+  .page-ref[data-ref='studying']:before {
+  content:                '🟦 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+  }
+  
+  .recent-item[data-ref='studying']:before,
+  .favorite-item[data-ref='Studying']:before {
+    content:                '🟦'!important;
+    margin-right:           2px;
+    font-size:              14px;
+  }
+  
+  .title[data-ref='studying']:before {
+    content:                '🟦 '!important;
+    margin-right:           2px;
+  }
+  
+  .recent-item[data-ref='studying']:before,
+  .favorite-item[data-ref='Studying']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  }
+
+  /* To Read */
+  .page-reference[data-ref='to read'] .page-ref,
+  .page-ref[data-ref='to read'] {
+    background-color:   #ff0000;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+  }
+  
+  .recent-item[data-ref='to read'] a,
+  .favorite-item[data-ref='To Read'] a,
+  .title[data-ref='to read'] {
+  color:                  #transparent;
+  }
+  
+  .recent-item[data-ref='to read'],
+  .favorite-item[data-ref='To Read'] {
+  position: relative;
+  }
+  .recent-item[data-ref='to read'] .page-icon,
+  .favorite-item[data-ref='To Read'] .page-icon {
+  visibility: hidden;
+  }
+  
+  .page-reference[data-ref='to read'] .page-ref:before,
+  .page-ref[data-ref='to read']:before {
+  content:                '🔴 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+  }
+  
+  .recent-item[data-ref='to read']:before,
+  .favorite-item[data-ref='To Read']:before {
+    content:                '🔴'!important;
+    margin-right:           2px;
+    font-size:              14px;
+  }
+  
+  .title[data-ref='to read']:before {
+    content:                '🔴 '!important;
+    margin-right:           2px;
+  }
+  
+  .recent-item[data-ref='to read']:before,
+  .favorite-item[data-ref='To Read']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  }
+/****** Reading**** ****/
+  
+.page-reference[data-ref='reading'] .page-ref,
+.page-ref[data-ref='reading'] {
+  background-color:   #f8f415;
+  color:              #fff!important;
+  padding:            1px 10px 1px 0px;
+  border-radius:      5px;
+}
+
+.recent-item[data-ref='reading'] a,
+.favorite-item[data-ref='Reading'] a,
+.title[data-ref='reading'] {
+color:                  #transparent;
+}
+
+.recent-item[data-ref='reading'],
+.favorite-item[data-ref='Reading'] {
+position: relative;
+}
+.recent-item[data-ref='reading'] .page-icon,
+.favorite-item[data-ref='Reading'] .page-icon {
+visibility: hidden;
+}
+
+.page-reference[data-ref='reading'] .page-ref:before,
+.page-ref[data-ref='reading']:before {
+content:                '🟡 ';
+margin-right:            8px;
+border:                  1px solid #fff;
+border-radius:           4px 0px 0px 4px;
+}
+
+.recent-item[data-ref='reading']:before,
+.favorite-item[data-ref='Reading']:before {
+  content:                '🟡'!important;
+  margin-right:           2px;
+  font-size:              14px;
+}
+
+.title[data-ref='reading']:before {
+  content:                '🟡 '!important;
+  margin-right:           2px;
+}
+
+.recent-item[data-ref='reading']:before,
+.favorite-item[data-ref='Reading']:before {
+position: absolute;
+left: 20px;
+top: 3px;
+}
+
+  /****** Read**** ****/
+  
+  .page-reference[data-ref='read'] .page-ref,
+  .page-ref[data-ref='read'] {
+    background-color:   #00BF00;
+    color:              #fff!important;
+    padding:            1px 10px 1px 0px;
+    border-radius:      5px;
+  }
+  
+  .recent-item[data-ref='read'] a,
+  .favorite-item[data-ref='Read'] a,
+  .title[data-ref='read'] {
+  color:                  #transparent;
+  }
+  
+  .recent-item[data-ref='read'],
+  .favorite-item[data-ref='Read'] {
+  position: relative;
+  }
+  .recent-item[data-ref='read'] .page-icon,
+  .favorite-item[data-ref='Read'] .page-icon {
+  visibility: hidden;
+  }
+  
+  .page-reference[data-ref='read'] .page-ref:before,
+  .page-ref[data-ref='read']:before {
+  content:                '🟢 ';
+  margin-right:            8px;
+  border:                  1px solid #fff;
+  border-radius:           4px 0px 0px 4px;
+  }
+  
+  .recent-item[data-ref='read']:before,
+  .favorite-item[data-ref='Read']:before {
+    content:                '🟢'!important;
+    margin-right:           2px;
+    font-size:              14px;
+  }
+  
+  .title[data-ref='read']:before {
+    content:                '🟢 '!important;
+    margin-right:           2px;
+  }
+  
+  .recent-item[data-ref='read']:before,
+  .favorite-item[data-ref='Read']:before {
+  position: absolute;
+  left: 20px;
+  top: 3px;
+  }

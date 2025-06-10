@@ -1,0 +1,26 @@
+/* Aqui agregaras los iconos a las paginas con emojies */ 
+
+a[data-ref="nombre de la pagina"]::before {
+     content: "💡";
+     width: 1em;
+     display: inline-block;
+     margin-right: 0.7em;
+     margin-left: 0.5em;
+     }
+
+/* Imagenes Webx */
+
+/* AGRADECIMIENTOS A Alexander Qwxlea
+LINK DEL SISTEMA ORIGINAL https://gist.github.com/QWxleA/e0cbf73c7fc4fe53a6906fb86f8cb26d */
+  a[data-ref="nombre de la pagina"]::before {
+    background-color:                 var(--ls-link-ref-text-color);
+    content:                          "";
+    display:                          inline-block;
+    position:                         relative;
+    bottom:                           -3px;
+    left:                             -2px;
+    margin:                           -13px 2px 0px 0px;
+    width:                            1.1rem;
+    -webkit-mask-box-image:           url("");/*recuerda que aqui se agrega la url de base64, tambien elimina este comentario*/
+    height:                           1.0rem;
+  } 

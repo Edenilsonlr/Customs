@@ -1,0 +1,3 @@
+/* color para el code mirriror */
+@import "https://codemirror.net/theme/colorforth.css";
+:editor/extra-codemirror-options {:theme "colorforth" }

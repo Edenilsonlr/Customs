@@ -1,0 +1,37 @@
+/* FONDO/ BACKGROUND A LAS PAGINAS Y ETIQUETAS */
+
+  /* etiquetas especificas */
+  *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a[data-ref=youtube].tag {
+    background-color: var(--ls-primary-text-color);
+    background-color: rgb(255, 0, 0);
+    border-radius: 18px;
+    color: var(--ls-primary-text-color);
+    color: white
+
+  }
+/* etiquetas generales */
+a.tag[data-ref] {
+    color: rgb(0, 0, 0);
+    background: rgb(248, 112, 191);
+    border-radius: 0.5rem 0rem;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 0.75rem;
+    padding: 2px 5px 2px 5px;
+    transition:relative;
+    white-space: nowrap;
+  }
+/* color a las paginas */
+  span.page-reference[data-ref="nombre de la pagina"] {
+    color: rgb(0, 0, 0);
+    background: rgb(205, 227, 228);
+    border-radius: 0.5rem 0rem;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 0.75rem;
+    padding: 2px 5px 2px 5px;
+    transition:relative;
+    white-space: nowrap;
+   }
